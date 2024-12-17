@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Canteen Food Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Campus Canteen Food Finder</h1>
+        <div class="budget-input">
+            <label for="budget">Enter your budget (IDR):</label>
+            <input type="number" id="budget" placeholder="Enter amount">
+            <button onclick="findFood()">Find Food</button>
+        </div>
+        <div class="results">
+            <h2>Available Food & Drinks</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Store</th>
+                            <th>Price (IDR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="food-list"></tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Drinks</th>
+                            <th>Store</th>
+                            <th>Price (IDR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="drink-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
